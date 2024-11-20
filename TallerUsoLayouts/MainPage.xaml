@@ -32,11 +32,11 @@
                 HorizontalOptions="Fill" />
 
             <Button
-    x:Name="CounterBtn"
-    Text="Click me" 
-    SemanticProperties.Hint="Counts the number of times you click"
-    Clicked="OnCounterClicked"
-    HorizontalOptions="Fill" />
+                x:Name="GridButton"
+                Text="Ir a Grid Layout" 
+                Clicked="GridButton_Clicked"
+                HorizontalOptions="Fill" />
+
         </VerticalStackLayout>
     </ScrollView>
 
