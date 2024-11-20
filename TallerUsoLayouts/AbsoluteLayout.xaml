@@ -3,10 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TallerUsoLayouts.AbsoluteLayout"
              Title="AbsoluteLayout">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                AbsoluteLayout.LayoutFlags="All">
+            <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*">
+                <Image  Source="doncangrejoculon.jpg"
+                        Aspect="AspectFill"
+                        Grid.Row="0" Grid.Column="0"
+                        />
+                <Label  x:Name="Imagen1"
+                        Grid.Row="0" Grid.Column="1"/>
+                <Image  Source="bobpreocupado.jpg"
+                        Aspect="AspectFill"
+                        Grid.Row="1" Grid.Column="0"
+                        />
+                <Label  x:Name="Imagen2"
+                        Grid.Row="1" Grid.Column="1"/>
+                <Image  Source="bobenojado.jpg"
+                        Aspect="AspectFill"
+                        Grid.Row="2" Grid.Column="0"
+                        />
+                <Label  x:Name="Imagen4"
+                        Grid.Row="2" Grid.Column="1"/>
+            </Grid>
+        </ScrollView>
+        <Button
+        x:Name="GridLayoutButton"
+        Text="Ir a GridLayout"
+        AbsoluteLayout.LayoutFlags="PositionProportional"
+        AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
+        Clicked="GridLayoutButton_Clicked" />
+    </AbsoluteLayout>
+
 </ContentPage>

@@ -6,34 +6,8 @@
     xmlns:local="clr-namespace:TallerUsoLayouts"
     Title="TallerUsoLayouts">
 
-    <FlyoutItem Title="Inicio">
-        <ShellContent
+    <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    </FlyoutItem>
-    <FlyoutItem Title="Grid">
-        <ShellContent
-        Title="GridLayout"
-        ContentTemplate="{DataTemplate local:GridLayout}"
-        Route="MainPage" />
-    </FlyoutItem>
-    <FlyoutItem Title="Stack">
-        <ShellContent
-        Title="StackLayout"
-        ContentTemplate="{DataTemplate local:StackLayout}"
-        Route="MainPage" />
-    </FlyoutItem>
-    <FlyoutItem Title="Flex">
-        <ShellContent
-        Title="FlexLayout"
-        ContentTemplate="{DataTemplate local:FlexLayout}"
-        Route="MainPage" />
-    </FlyoutItem>
-    <FlyoutItem Title="Absolute">
-        <ShellContent
-        Title="AbsoluteLayout"
-        ContentTemplate="{DataTemplate local:AbsoluteLayout}"
-        Route="MainPage" />
-    </FlyoutItem>
 </Shell>
