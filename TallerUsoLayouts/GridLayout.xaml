@@ -3,10 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TallerUsoLayouts.GridLayout"
              Title="GridLayout">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+        <BoxView Grid.Row="0" Grid.Column="0" Width="100" Height="100" BackgroundColor="#56d2e8"/>
+        <BoxView Grid.Row="0" Grid.Column="1" Width="100" Height="100" BackgroundColor="#a9e856"/>
+        <BoxView Grid.Row="1" Grid.Column="0" Width="100" Height="100" BackgroundColor="#7256e8"/>
+        <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="#e85a56">
+            <BoxView Width="100" Height="100" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button x:Name="StackLayoutButton"
+                    Clicked="StackLayout_Clicked"
+                    Text="Ir a Stack Layout"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </Grid>
 </ContentPage>
